@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    >
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        tools:text="name"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_car_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        tools:text="price"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/teal_200"
+    android:layout_alignParentBottom="true"/>
+</RelativeLayout>
