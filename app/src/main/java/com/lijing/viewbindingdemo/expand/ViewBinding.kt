@@ -38,6 +38,7 @@ class FragmentBindingDelegate<VB : ViewBinding>(private val bind: (View) -> VB) 
         if (binding == null) {
             binding = bind(thisRef.requireView())
             thisRef.doOnDestroyView {
+                if (thisRef is BindingLifecycleOwner) thisRef.onDestroyViewBinding(binding!!)
                 binding = null
             }
         }
